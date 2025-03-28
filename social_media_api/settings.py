@@ -1,8 +1,6 @@
 from pathlib import Path
 import os
 from dotenv import load_dotenv
-import dj_database_url
-import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -105,7 +103,6 @@ USE_I18N = True
 
 USE_TZ = True
 
-django_heroku.settings(locals())
 # Root directory where static files are collected when 'collectstatic' is runned
 STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles') # - This line tells Django to collect all static files and store them in a subdirectory called 'staticfiles'
 # Specify URL prefix for serving static files
