@@ -1,0 +1,8 @@
+*.pyc
+__pycache__/
+Pipfile
+Pipfile.lock
+.vscode/
+.env
+db.sqlite3
+media/
